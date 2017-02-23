@@ -1,0 +1,57 @@
+body{
+  margin:1%;font-size: 18px;background: gray;font-family: tahoma;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+  margin:0; padding: 0
+}
+li{
+  list-style: none;
+}
+
+header{
+  background: skyblue;color: black;text-align: center;padding:1%;margin:1%;
+}
+.nav{
+  background:lightpink;padding:2%;text-align: left;color: purple;margin-top:1%;
+}
+.nav ul{
+    display: flex;flex-direction: row;justify-content: space-around;
+}
+.nav ul li{
+  margin: 1%;display: felx;flex-direction:row;justify-content: space-around;background:white;flex:1 auto;
+}
+.nav ul li:hover a{
+  color:red;
+}
+.nav ul li ul{
+  display: none;
+}
+.nav ul li:hover ul{
+  display: block;margin:1% 0 0 0;background:blue;
+}
+section{
+  background:white;
+  display: flex;flex-direction:row;padding:1%;flex-flow: row nowrap;justify-content: space-around;
+}
+section article{
+  background: lightblue;width: 30%;padding: 1%%;margin:1%;
+}
+
+footer{
+  background:lightblue;
+  display: flex;flex-direction: row;color: white;justify-content: space-between;
+}
+footer article{
+  background:pink; color:black;padding:2%;margin:1%;justify-content: space-around;
+}
+@media all and (max-width: 600px){
+  .nav ul, section, footer{
+    flex-direction:column;text-align: center;
+  }
+  section article{
+    width: 98%
+  }
+ footer article{
+    width:98%;text-align: center;
+  }
+}
